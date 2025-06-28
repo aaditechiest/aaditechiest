@@ -1,0 +1,145 @@
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #007bff;
+            padding: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            header img {
+    max-width: 150px;
+    margin-right: 10px;
+    border-radius: 50%;
+    align-self: flex-start;
+}                   
+        h1 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .hero {
+            background: #004080;
+            color: white;
+            padding: 40px 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 90%;
+            margin: 10px auto;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .comparison-item {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .comparison-item a {
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .latest-posts {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #004080;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .comparison-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .comparison-item a {
+                margin-top: 10px;
+            }
+        }
+        
+
+
+.comparison-card {
+      background: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card-header {
+   padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    text-align: left;
+}
+
+.card-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background: #ffffff;
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
+}
+.comparison-card:hover .card-content {
+    max-height: 300px;
+    padding: 20px;
+}
+
+.card-content img {
+      width: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;}
+    
+
+.card-content img:hover {
+    transform: scale(1.1);
+}
+
+.card-content a {
+    display: inline-block;
+    margin: 10px 0 20px;
+    text-decoration: none;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.comparison-card.active .card-content {
+    max-height: 300px;
+    padding: 20px;
+}

@@ -8,59 +8,124 @@
     <meta name="description" content="Stay updated with the latest in technology, gadgets, reviews, and industry news.">
 <meta name="keywords" content="best laptops under 60000, best phones under 20000, tech comparisons 2025, laptop reviews, smartphone deals, Aaditechiest">
     
-   <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #007bff;
+            padding: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            header img {
+    max-width: 150px;
+    margin-right: 10px;
+    border-radius: 50%;
+    align-self: flex-start;
+}                   
+        h1 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .hero {
+            background: #004080;
+            color: white;
+            padding: 40px 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .comparison-item {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .comparison-item a {
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .latest-posts {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #004080;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .comparison-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .comparison-item a {
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header with Logo -->
     <header>
-        <img src="images/AadoTechiestsmith.png" alt="Aaditechiest Logo">
+        <img src="AadoTechiestsmith.png" alt="Aaditechiest Logo">
         <h1>Aaditechiest</h1>
     </header>
 
     <!-- Hero Section -->
     <div class="hero">
-        <h2>About Us</h2>
-        <p>Aaditechiest is a technology-focused comparison website that helps users find the best gadgets, electronics, and smart devices online. From smartphones and laptops to wearables and accessories — we review, rank, and recommend top products with real-world insights and affiliate links to the best deals.
-With accurate comparisons and regularly updated content, Aaditechiest aims to be your go-to source before every tech purchase.</p>
+        <h2>Compare & Find the Best Tech Deals!</h2>
+        <p>Explore top comparisons like best laptops under ₹60,000, best phones under ₹20,000, and more!</p>
     </div>
 
     <!-- Trending Comparisons Section -->
-<div class="container">
-    <h2>🔥 Trending Comparisons</h2>
-
-    <div class="comparison-card">
-        <div class="card-header">
-            💻 Best Laptops Under ₹60,000
+    <div class="container">
+        <h2>🔥 Trending Comparisons</h2>
+        <div class="comparison-item">
+            <p>💻 Best Laptops Under ₹60,000</p>
+            <a href="laptops_to _buy _in_april_2025_under_60000_with 3050_graphiccard.html">View Deals</a>
         </div>
-        <div class="card-content">
-            <img src="images/asusA15.jpg" alt="Laptop 1">
-            <img src="images/acerALG.jpg" alt="Laptop 2">
-            <img src="images/Lenovo LOQ.jpg" alt="Laptop 3">
-            <a href="laptops_to _buy _in_april_2025_under_60000_with 3050_graphiccard.html" target="_blank">🔍 View Full Details</a>
+        <div class="comparison-item">
+            <p>📱 Best Phones Under ₹20,000</p>
+            <a href="mobile_under_20000.html">View Deals</a>
         </div>
-    </div>
-
-    <div class="comparison-card">
-        <div class="card-header">
-            📱 Best Phones Under ₹20,000
-        </div>
-        <div class="card-content">
-            <img src="images/oneplusnordce4.jpg" alt="Phone 1">
-            <img src="images/nothingphone3a.jpg" alt="Phone 2">
-            <a href="mobile_under_20000.html" target="_blank">🔍 View Full Details</a>
+        <div class="comparison-item">
+            <p>⚡ i5 vs i7 Processors – Which One to Buy?</p>
+            <a href="#">Read Comparison</a>
         </div>
     </div>
-    <div class="comparison-card">
-        <div class="card-header">
-            🖥️ Best Affordable RGB Keyboards
-        </div>
-        <div class="card-content">
-            <img src="images/RedgearShadow.jpg" alt="Keyboard 1">
-            <img src="images/RedgearBlitz.jpg" alt="Keyboard 2">
-            <a href="affordable_rbg_branded_keyboards.html" target="_blank">🔍 View Full Details</a>
-        </div>
-</div>
 
     <!-- Latest Posts Section -->
     <div class="latest-posts">
@@ -72,17 +137,6 @@ With accurate comparisons and regularly updated content, Aaditechiest aims to be
     <footer>
         <p>© 2025 Aaditechiest. All Rights Reserved.</p>
     </footer>
-
-    <script>
-    const cards = document.querySelectorAll('.comparison-card');
-
-    cards.forEach(card => {
-        card.querySelector('.card-header').addEventListener('click', () => {
-            card.classList.toggle('active');
-        });
-    });
-</script>
-
 
 </body>
 </html>

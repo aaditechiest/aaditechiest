@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mobile Comparison – aaditechies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Extra styles for detailed mobile comparison page */
+    .comparison-hero {
+      padding-top: 1.5em;
+      text-align: center;
+    }
+    .comparison-section {
+      margin: 2em auto;
+      max-width: 1100px;
+      padding: 0 1em;
+    }
+    .comparison-table-wrapper {
+      overflow-x: auto;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      font-size: 1em;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      transition: background 0.3s;
+    }
+    .comparison-table th, .comparison-table td {
+      padding: 0.75em 1em;
+      text-align: center;
+      border-bottom: 1px solid #e3e3e3;
+    }
+    .comparison-table th {
+      background: #e9ecef;
+      color: #003566;
+    }
+    .comparison-table img {
+      width: 80px;
+      height: 112px;
+      object-fit: cover;
+      border-radius: 9px;
+      background: #f1f3f6;
+    }
+    /* Responsive table */
+    @media (max-width: 700px) {
+      .comparison-section {
+        padding: 0 0.1em;
+      }
+      .comparison-table th, .comparison-table td {
+        padding: 0.5em 0.3em;
+        font-size: 0.97em;
+      }
+      .comparison-table img {
+        width: 56px;
+        height: 78px;
+      }
+    }
+
+    /* Dark mode for table */
+    body.dark-mode .comparison-table {
+      background: #181a20;
+      color: #d4e4f1;
+    }
+    body.dark-mode .comparison-table th {
+      background: #21273a;
+      color: #a5d8ff;
+    }
+    body.dark-mode .comparison-table td {
+      border-bottom: 1px solid #272e3b;
+    }
+    /* Info Labels/Tags */
+    .info-label {
+      background: #ffe066;
+      color: #0056a6;
+      border-radius: 5px;
+      padding: 2px 7px;
+      font-size: 0.92em;
+      font-weight: 600;
+      margin: 1px 3px;
+      display: inline-block;
+    }
+    body.dark-mode .info-label {
+      background: #ffd43b;
+      color: #0056a6;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">aaditechies</div>
+    <ul class="nav-links">
+      <li><a href="index.html#updates">Updates</a></li>
+      <li><a href="index.html#new">New</a></li>
+      <li><a href="allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <section class="comparison-hero">
+    <h1>Ultimate Mobile Comparison</h1>
+    <p>Compare every detail — display, processor, camera, battery, network, security, and more — across top smartphones!</p>
+  </section>
+
+  <section class="comparison-section">
+    <div class="comparison-table-wrapper">
+      <table class="comparison-table">
+        <tr>
+          <th>Spec</th>
+          <th>
+            <img src="https://via.placeholder.com/80x112?text=Galaxy+Ultra+X" alt="Galaxy Ultra X"><br>
+            Galaxy Ultra X<br><span class="info-label">Android</span>
+          </th>
+          <th>
+            <img src="https://via.placeholder.com/80x112?text=Apple+iPhone+17" alt="iPhone 17 Pro"><br>
+            iPhone 17 Pro<br><span class="info-label">iOS</span>
+          </th>
+          <th>
+            <img src="https://via.placeholder.com/80x112?text=Pixel+10" alt="Pixel 10 Pro"><br>
+            Pixel 10 Pro<br><span class="info-label">Android</span>
+          </th>
+        </tr>
+        <tr>
+          <td>Display</td>
+          <td>6.8" QHD+ AMOLED<br>120Hz, HDR10+</td>
+          <td>6.7" OLED<br>ProMotion, LTPO, HDR</td>
+          <td>6.6" pOLED<br>120Hz, HDR+</td>
+        </tr>
+        <tr>
+          <td>Processor</td>
+          <td>Snapdragon 8 Gen 3<br><span class="info-label">4nm</span></td>
+          <td>Apple A19 Pro<br><span class="info-label">3nm</span></td>
+          <td>Google Tensor G4<br><span class="info-label">4nm</span></td>
+        </tr>
+        <tr>
+          <td>RAM</td>
+          <td>12GB</td>
+          <td>8GB</td>
+          <td>12GB</td>
+        </tr>
+        <tr>
+          <td>Storage</td>
+          <td>256/512GB, 1TB</td>
+          <td>256/512GB, 1TB</td>
+          <td>256/512GB</td>
+        </tr>
+        <tr>
+          <td>Rear Cameras</td>
+          <td>
+            200MP (Wide)<br>
+            12MP (Ultra-wide)<br>
+            10MP (Periscope 10x)
+          </td>
+          <td>
+            48MP (Wide)<br>
+            12MP (Ultra-wide)<br>
+            12MP (Tele, 5x)
+          </td>
+          <td>
+            108MP (Wide)<br>
+            12MP (Ultra-wide)<br>
+            48MP (Tele, 4x)
+          </td>
+        </tr>
+        <tr>
+          <td>Front Camera</td>
+          <td>32MP</td>
+          <td>12MP</td>
+          <td>16MP</td>
+        </tr>
+        <tr>
+          <td>Battery</td>
+          <td>5,200mAh<br>80W Wired, 50W Wireless</td>
+          <td>4,800mAh<br>35W Wired, 20W Wireless</td>
+          <td>5,000mAh<br>66W Wired, 40W Wireless</td>
+        </tr>
+        <tr>
+          <td>OS</td>
+          <td>Android 15</td>
+          <td>iOS 19</td>
+          <td>Android 15</td>
+        </tr>
+        <tr>
+          <td>5G</td>
+          <td>&#10003;</td>
+          <td>&#10003;</td>
+          <td>&#10003;</td>
+        </tr>
+        <tr>
+          <td>Biometrics</td>
+          <td>Fingerprint (Display), Face Unlock</td>
+          <td>Face ID</td>
+          <td>Fingerprint (Display), Face Unlock</td>
+        </tr>
+        <tr>
+          <td>Water/Dust<br>Resistance</td>
+          <td>IP68</td>
+          <td>IP68</td>
+          <td>IP68</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>220g</td>
+          <td>205g</td>
+          <td>198g</td>
+        </tr>
+        <tr>
+          <td>Colors</td>
+          <td>Black, Silver, Blue, Red</td>
+          <td>Midnight, Starlight, Green, Purple</td>
+          <td>Obsidian, Porcelain, Sky</td>
+        </tr>
+        <tr>
+          <td>Price (USD)</td>
+          <td>$1,099</td>
+          <td>$1,199</td>
+          <td>$999</td>
+        </tr>
+      </table>
+    </div>
+    <p style="text-align:center; color:#666; margin-top:1.5em; font-size:0.96em;">
+      Tap and scroll to see more details and compare all features on mobile. <br>
+      <span class="info-label">Tip:</span> This page shows every spec you might care about!
+    </p>
+  </section>
+
+  <section class="about-us" id="about">
+    <h2>How to Use</h2>
+    <p>Review every small detail: From display tech and battery size to biometrics, software, and even available colors. All specs are easily viewable on both mobile and desktop, just swipe or scroll horizontally if needed.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 aaditechies. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparison – aaditechies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">aaditechies</div>
+    <ul class="nav-links">
+      <li><a href="index.html#updates">Updates</a></li>
+      <li><a href="index.html#new">New</a></li>
+      <li><a href="allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-title">
+      <h1>Device Comparison</h1>
+      <p>Side-by-side comparisons of the latest gadgets and tech devices.</p>
+    </div>
+    <div class="comparison-table-wrapper">
+      <table class="comparison-table">
+        <tr>
+          <th>Feature</th>
+          <th>Device A</th>
+          <th>Device B</th>
+        </tr>
+        <tr>
+          <td>Image</td>
+          <td><img src="https://via.placeholder.com/100x75?text=Device+A" alt="Device A"></td>
+          <td><img src="https://via.placeholder.com/100x75?text=Device+B" alt="Device B"></td>
+        </tr>
+        <tr>
+          <td>Screen Size</td>
+          <td>6.5"</td>
+          <td>6.7"</td>
+        </tr>
+        <tr>
+          <td>Processor</td>
+          <td>Snapdragon 8 Gen 2</td>
+          <td>Apple A17 Pro</td>
+        </tr>
+        <tr>
+          <td>Battery</td>
+          <td>5,000mAh</td>
+          <td>4,500mAh</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>$899</td>
+          <td>$999</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="about-us" id="about">
+    <h2>Why Comparisons?</h2>
+    <p>Our tech comparison tables help you make informed buying decisions by highlighting real differences[1][3][5].</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 aaditechies. All rights reserved.</p>
+  </footer>
+
+<script>
+  const toggleBtn = document.querySelector('.mode-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+  });
+</script>
+</body>
+</html>

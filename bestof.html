@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Best Of Index – Aaditechiest</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .bestof-hero {
+      text-align: center;
+      padding: 2em 1em 1em;
+    }
+    .bestof-index-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      padding: 1em 1em 3em;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .bestof-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 7px 22px rgba(0, 55, 102, 0.09), 0 2px 8px rgba(0, 55, 102, 0.07);
+      width: 270px;
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      gap: 1.1em;
+      padding: 1.1em 1.3em;
+      text-decoration: none;
+      color: #003566;
+      font-size: 1.08em;
+      font-weight: 600;
+      transition: transform 0.24s, box-shadow 0.23s, background 0.22s, color 0.21s;
+      cursor: pointer;
+      animation: bounceIn 0.7s;
+    }
+    .bestof-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      background: linear-gradient(110deg, #74c0fc 0%, #e9ecef 100%);
+      color: #1a237e;
+      box-shadow: 0 14px 38px rgba(0, 55, 102, 0.18);
+    }
+    .bestof-card .bestof-icon {
+      font-size: 2.2em;
+      margin-right: 0.4em;
+    }
+    @keyframes bounceIn {
+      0% {transform: scale(0.95) translateY(30px);}
+      80% {transform: scale(1.05) translateY(-5px);}
+      100% {transform: scale(1) translateY(0);}
+    }
+    body.dark-mode .bestof-card {
+      background: #232333;
+      color: #90bfff;
+      box-shadow: 0 9px 28px rgba(33,150,243,0.23), 0 2px 6px rgba(33,150,243,0.18);
+    }
+    body.dark-mode .bestof-card:hover {
+      background: linear-gradient(110deg, #3a8ee6 0%, #232333 100%);
+      color: #f6f8fa;
+      box-shadow: 0 17px 48px rgba(33,150,243,0.34);
+    }
+    @media (max-width: 700px) {
+      .bestof-index-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+      }
+      .bestof-card {
+        width: 95vw;
+        font-size: 1em;
+        min-height: 80px;
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Aaditechiest</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html#updates">Updates</a></li>
+      <li><a href="index.html#new">New</a></li>
+      <li><a href="allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <section class="bestof-hero">
+    <h1>Best Of Recommendations</h1>
+    <p>Discover top picks for mobiles, laptops, and more—expert selections for all budgets and needs!</p>
+  </section>
+
+  <section class="bestof-index-list">
+    <!-- Each card links to your dedicated 'Best Of' pages -->
+    <a class="bestof-card" href="best mobile under 20000.html">
+      <span class="bestof-icon">📱</span>
+      Best Mobile Under ₹20,000
+    </a>
+    <a class="bestof-card" href="laptops_to _buy _in_april_2025_under_60000_with 3050_graphiccard.html">
+      <span class="bestof-icon">💻</span>
+      Best Laptop Under ₹60,000
+    </a>
+    <a class="bestof-card" href="best-mobile-under-30000.html">
+      <span class="bestof-icon">📱</span>
+      Best Mobile Under ₹30,000
+    </a>
+    <a class="bestof-card" href="best-tablet-under-40000.html">
+      <span class="bestof-icon">� tablet</span>
+      Best Tablet Under ₹40,000
+    </a>
+    <a class="bestof-card" href="best-smartwatch-under-10000.html">
+      <span class="bestof-icon">⌚</span>
+      Best Smartwatch Under ₹10,000
+    </a>
+    <a class="bestof-card" href="best-gaming-laptop-under-60000.html">
+      <span class="bestof-icon">🎮</span>
+      Best Gaming Laptop Under ₹60,000
+    </a>
+    <!-- Add more 'Best Of' cards here as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aaditechiest. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dark/light mode toggle logic
+    const toggleBtn = document.querySelector('.mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+    });
+  </script>
+</body>
+</html>

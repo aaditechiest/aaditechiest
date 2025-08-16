@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tech News – aaditechies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Aaditechiest</a></div>
+    <ul class="nav-links">
+      <li><a href="updates.html">Updates</a></li>
+      <li><a href="index.html#new">New</a></li>
+      <li><a href="allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-title">
+      <h1>Latest Tech News</h1>
+      <p>Stay updated on breaking news and top stories in the world of technology.</p>
+    </div>
+    <div id="news-list" class="news-list">
+      <!-- News cards will be injected here by news.js -->
+    </div>
+  </section>
+
+  <section class="about-us" id="about">
+    <h2>Real-Time Tech Updates</h2>
+    <p>From product launches to industry trends, aaditechies brings you crisp, credible news daily.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aaditechiest. All rights reserved.</p>
+  </footer>
+
+  <script src="news.js"></script>
+  <script>
+    // Dark/light mode toggle
+    const toggleBtn = document.querySelector('.mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+    });
+  </script>
+</body>
+</html>

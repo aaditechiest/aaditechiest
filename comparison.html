@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All Comparisons – Aaditechiest</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .comp-index-hero {
+      text-align: center;
+      padding: 2em 1em 1em;
+    }
+    .comparison-index-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      padding: 1em 1em 3em;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .comp-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 7px 22px rgba(0, 55, 102, 0.09), 0 2px 8px rgba(0, 55, 102, 0.06);
+      width: 270px;
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1em;
+      padding: 1em 1.2em;
+      text-decoration: none;
+      color: #003566;
+      font-size: 1.08em;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+      cursor: pointer;
+      animation: bounceIn 0.7s;
+    }
+    .comp-card:hover {
+      transform: translateY(-7px) scale(1.04);
+      background: linear-gradient(110deg, #74c0fc 0%, #e9ecef 100%);
+      color: #1a237e;
+      box-shadow: 0 14px 40px rgba(0, 55, 102, 0.15);
+    }
+    .comp-card .comp-icon {
+      font-size: 2em;
+      margin-right: 0.5em;
+    }
+    @keyframes bounceIn {
+      0% {transform: scale(0.95) translateY(30px);}
+      80% {transform: scale(1.05) translateY(-5px);}
+      100% {transform: scale(1) translateY(0);}
+    }
+    body.dark-mode .comp-card {
+      background: #1f1f1f;
+      color: #90bfff;
+      box-shadow: 0 9px 28px rgba(33,150,243,0.23), 0 2px 6px rgba(33,150,243,0.18);
+    }
+    body.dark-mode .comp-card:hover {
+      background: linear-gradient(110deg, #3a8ee6 0%, #232333 100%);
+      color: #eaeefa;
+      box-shadow: 0 17px 48px rgba(33,150,243,0.39);
+    }
+    @media (max-width: 700px) {
+      .comparison-index-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+      }
+      .comp-card {
+        width: 96vw;
+        font-size: 1em;
+        min-height: 80px;
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Aaditechiest</a></div>
+      <li><a href="updates.html">Updates</a></li>
+      <li><a href="news.html">New</a></li>
+      <li><a href="allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <section class="comp-index-hero">
+    <h1>Device & OS Comparison Index</h1>
+    <p>Explore in-depth comparisons between popular brands, models and operating systems!</p>
+  </section>
+
+  <section class="comparison-index-list">
+    <!-- Each card links to your comparison details page -->
+    <a class="comp-card" href="android-vs-apple.html">
+      <span class="comp-icon">🤖🍏</span>
+      Android vs Apple
+    </a>
+    <a class="comp-card" href="iqooz9-vs-oppok13.html">
+      <span class="comp-icon">📱📱</span>
+      iQOO Z9 vs Oppo K13
+    </a>
+    <a class="comp-card" href="samsung-vs-xiaomi.html">
+      <span class="comp-icon">📱📱</span>
+      Samsung vs Xiaomi
+    </a>
+    <a class="comp-card" href="oneplus-vs-realme.html">
+      <span class="comp-icon">📱📱</span>
+      OnePlus vs Realme
+    </a>
+    <a class="comp-card" href="android-vs-ios.html">
+      <span class="comp-icon">🤖🍎</span>
+      Android OS vs iOS
+    </a>
+    <!-- Add more cards as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aaditechiest. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dark/light mode toggle
+    const toggleBtn = document.querySelector('.mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+    });
+  </script>
+</body>
+</html>

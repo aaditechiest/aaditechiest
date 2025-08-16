@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Updates – aaditechies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .updates-container {
+      max-width: 1100px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .updates-header {
+      text-align: center;
+      margin-bottom: 2em;
+      color: #003566;
+    }
+    .update-item {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 7px 22px rgba(0, 55, 102, 0.1);
+      padding: 1.5em 2em;
+      margin-bottom: 1.5em;
+      transition: background 0.3s, box-shadow 0.3s;
+      cursor: default;
+    }
+    .update-item:hover {
+      background: #e6f0ff;
+      box-shadow: 0 12px 40px rgba(0, 55, 102, 0.2);
+    }
+    .update-title {
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-bottom: 0.4em;
+      color: #0a3d62;
+    }
+    .update-date {
+      font-size: 0.95em;
+      color: #617d98;
+      margin-bottom: 0.8em;
+    }
+    .update-description {
+      font-size: 1em;
+      line-height: 1.4;
+      color: #334e68;
+    }
+    @media (max-width: 700px) {
+      .updates-container {
+        padding: 0 0.6em;
+      }
+      .update-item {
+        padding: 1.2em 1.2em;
+      }
+    }
+    /* Dark mode */
+    body.dark-mode .updates-container {
+      color: #d0e1ff;
+    }
+    body.dark-mode .update-item {
+      background: #21273a;
+      box-shadow: 0 7px 22px rgba(33, 100, 243, 0.2);
+      color: #cfd9f7;
+    }
+    body.dark-mode .update-item:hover {
+      background: #2f3a5f;
+      box-shadow: 0 12px 40px rgba(33, 100, 243, 0.4);
+    }
+    body.dark-mode .update-title {
+      color: #90bfff;
+    }
+    body.dark-mode .update-date {
+      color: #a9badb;
+    }
+    body.dark-mode .update-description {
+      color: #c2ceee;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Aaditechiest</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html#updates">Updates</a></li>
+      <li><a href="news.html">New</a></li>
+      <li><a href="allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <main class="updates-container">
+    <header class="updates-header">
+      <h1>Latest Updates</h1>
+      <p>Stay informed with the latest device launches, software updates, and tech news.</p>
+    </header>
+
+    <article class="update-item">
+      <h2 class="update-title">Android 15 rolls out with privacy improvements and faster UI</h2>
+      <time class="update-date" datetime="2025-08-10">August 10, 2025</time>
+      <p class="update-description">
+        Google has officially launched Android 15, bringing enhanced privacy controls, smoother navigation, and energy efficiency optimizations across supported devices worldwide.
+      </p>
+    </article>
+
+    <article class="update-item">
+      <h2 class="update-title">Apple Watch Series 10 announced with new health sensors</h2>
+      <time class="update-date" datetime="2025-08-08">August 8, 2025</time>
+      <p class="update-description">
+        Apple’s newest smart watch features state-of-the-art blood sugar and hydration sensors aimed at fitness enthusiasts and users with chronic conditions.
+      </p>
+    </article>
+
+    <article class="update-item">
+      <h2 class="update-title">Samsung’s One UI 7 Beta released for Galaxy S24 series</h2>
+      <time class="update-date" datetime="2025-08-05">August 5, 2025</time>
+      <p class="update-description">
+        The One UI 7 beta is now available to testers with new customization options, multitasking features, and improved security patches.
+      </p>
+    </article>
+
+    <article class="update-item">
+      <h2 class="update-title">Pixel 11 scheduled for October launch with upgraded cameras</h2>
+      <time class="update-date" datetime="2025-08-02">August 2, 2025</time>
+      <p class="update-description">
+        Google’s upcoming flagship, Pixel 11, is set to debut with advanced computational photography and hardware improvements.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aaditechiest. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+    });
+  </script>
+</body>
+</html>

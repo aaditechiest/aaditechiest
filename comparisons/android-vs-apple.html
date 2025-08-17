@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Android vs Apple – Full Comparison | Aaditechiest</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .comparison-hero {
+      text-align: center;
+      padding: 2em 1em 1em;
+    }
+    .platform-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      margin-bottom: 2em;
+    }
+    .platform-card {
+      min-width: 220px;
+      max-width: 340px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 7px 22px rgba(0, 55, 102, 0.09), 0 2px 8px rgba(0, 55, 102, 0.06);
+      padding: 1.4em 1.1em 1.7em;
+      font-size: 1.09em;
+      text-align: left;
+      transition: transform 0.23s, box-shadow 0.22s, background 0.21s, color 0.2s;
+      animation: bounceIn 0.7s;
+      cursor: default;
+      color: #212529;
+    }
+    .platform-card.android {
+      border-left: 6px solid #4caf50;
+    }
+    .platform-card.apple {
+      border-left: 6px solid #2196f3;
+    }
+    .platform-card h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+      font-size: 1.1em;
+      margin: 0 0 0.7em 0;
+    }
+    .key-diff-table {
+      margin: 2.5em auto 2em auto;
+      border-collapse: collapse;
+      width: 95%;
+      background: #f6f8fa;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      font-size: 0.98em;
+    }
+    .key-diff-table th, .key-diff-table td {
+      padding: 1em 0.7em;
+      border-bottom: 1px solid #e3e3e3;
+      text-align: center;
+    }
+    .key-diff-table tr:last-child td { border-bottom: none; }
+    .key-diff-table th {
+      background: #e9ecef;
+      color: #003566;
+      font-weight: 700;
+    }
+    .winner {
+      background: #d6f5df;
+      font-weight: bold;
+      color: #237145;
+    }
+    .rooting-info {
+      background: #f3f9fe;
+      border-left: 5px solid #4caf50;
+      margin: 2em auto;
+      max-width: 900px;
+      border-radius: 13px;
+      box-shadow: 0 2px 12px rgba(52,168,83,0.08);
+      padding: 1.4em;
+      font-size: 1.05em;
+      color: #2f5933;
+    }
+    .usage-guide {
+      margin: 2.5em auto;
+      max-width: 900px;
+      background: #fffef5;
+      padding: 1.4em 1em;
+      border-radius: 13px;
+      box-shadow: 0 2px 12px rgba(243,193,71,0.11);
+      color: #6c4c11;
+    }
+    .platform-origin {
+      margin: 0 auto 2.2em auto;
+      max-width: 900px;
+      background: #eef6fb;
+      padding: 1.2em 1em;
+      border-radius: 9px;
+      box-shadow: 0 2px 8px rgba(0,55,102,0.07);
+      font-size: 1.03em;
+      color: #205173;
+    }
+    .section-header {
+      font-size: 1.25em;
+      font-weight: bold;
+      margin: 2em 0 1em 0;
+      color: #0a3d62;
+    }
+    @media (max-width: 700px) {
+      .platform-cards { flex-direction: column; align-items: center; gap: 1em; }
+      .platform-card { width: 96vw; font-size: 1em; min-width: unset; }
+      .key-diff-table { font-size: 0.95em;}
+      .platform-origin, .rooting-info, .usage-guide { font-size: 1em; padding: 1em;}
+    }
+    body.dark-mode .platform-card,
+    body.dark-mode .platform-origin,
+    body.dark-mode .key-diff-table,
+    body.dark-mode .rooting-info,
+    body.dark-mode .usage-guide {
+      background: #232333;
+      color: #e3ebf5;
+      box-shadow: 0 8px 24px rgba(33,150,243,0.23), 0 2px 6px rgba(33,150,243,0.17);
+    }
+    body.dark-mode .key-diff-table th { background: #21273a; color: #74c0fc;}
+    body.dark-mode .winner { background: #174c2e; color: #e3fbe8;}
+    body.dark-mode .rooting-info { border-left-color: #98ff98;}
+    body.dark-mode .usage-guide { color: #f2dfaa;}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Aaditechiest</div>
+    <ul class="nav-links">
+      <li><a href="index.html#updates">Updates</a></li>
+      <li><a href="index.html#new">New</a></li>
+      <li><a href="allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <section class="comparison-hero">
+    <h1>Android vs Apple (iOS): Full Comparison</h1>
+    <p>Discover every difference, major advantage, and which is best for your needs.</p>
+  </section>
+
+  <section class="platform-cards">
+    <div class="platform-card android">
+      <h2>🤖 Android</h2>
+      <ul>
+        <li>Highly customizable (launchers, widgets, icons)</li>
+        <li>Wide device variety — from affordable to premium</li>
+        <li>Open ecosystem with lots of hardware brands</li>
+        <li>Google Play Store + third-party app stores</li>
+        <li>Strong integration with Google services</li>
+        <li>Advanced options: device rooting, custom ROMs</li>
+      </ul>
+    </div>
+    <div class="platform-card apple">
+      <h2>🍏 Apple (iOS)</h2>
+      <ul>
+        <li>Sleek, consistent hardware-software integration</li>
+        <li>Fast, regular updates for all supported devices</li>
+        <li>Exclusive apps and services (iMessage, FaceTime, AirDrop)</li>
+        <li>Strict privacy controls and curated App Store</li>
+        <li>Easy ecosystem for users with Mac, iPad, Watch</li>
+        <li>Less customization, limited device/sideload support</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="section-header">⚡ Key Differences (Android vs Apple)</div>
+  <table class="key-diff-table">
+    <tr>
+      <th>Feature</th><th>Android</th><th>iOS (Apple)</th><th>Winner</th>
+    </tr>
+    <tr>
+      <td>Customization</td>
+      <td>Extensive: launchers, icons, ROMs</td>
+      <td>Limited: widgets, wallpapers</td>
+      <td class="winner">Android</td>
+    </tr>
+    <tr>
+      <td>Device Choice</td>
+      <td>Hundreds of brands, shapes, prices</td>
+      <td>Mostly iPhones only</td>
+      <td class="winner">Android</td>
+    </tr>
+    <tr>
+      <td>App Store</td>
+      <td>Google Play (and others)</td>
+      <td>Apple App Store only</td>
+      <td class="winner">Android</td>
+    </tr>
+    <tr>
+      <td>System Updates</td>
+      <td>Irregular, depends on manufacturer</td>
+      <td>Usually fast & available for all</td>
+      <td class="winner">Apple</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>Good (varies by brand and practice)</td>
+      <td>Excellent: hardware and software</td>
+      <td class="winner">Apple</td>
+    </tr>
+    <tr>
+      <td>Root/Jailbreak</td>
+      <td>Full Rooting and custom ROMs possible</td>
+      <td>Jailbreaking limited, discouraged</td>
+      <td class="winner">Android</td>
+    </tr>
+    <tr>
+      <td>Value for Money</td>
+      <td>Many options from budget to flagship</td>
+      <td>Premium only</td>
+      <td class="winner">Android</td>
+    </tr>
+    <tr>
+      <td>Integration</td>
+      <td>Excellent with Google services, decent for Windows</td>
+      <td>Perfect with Apple ecosystem</td>
+      <td class="winner">Apple</td>
+    </tr>
+    <tr>
+      <td>Versatility</td>
+      <td>Works for all styles/users</td>
+      <td>Best for those who love Apple ecosystem</td>
+      <td class="winner">Android</td>
+    </tr>
+  </table>
+
+  <div class="section-header">🎯 Which Should You Choose?</div>
+  <div class="usage-guide">
+    <ul>
+      <li><strong>Power/Tech Users, Tinkerers, Gamers:</strong> Choose <b>Android</b> for unlimited customization, rooting, emulators, and device options.</li>
+      <li><strong>Smooth, Worry-Free Experience, Security:</strong> Pick <b>iOS</b> for updates, privacy, polished experience, and ecosystem.</li>
+      <li><strong>Students & Budget Users:</strong> Android offers best value and flexibility.</li>
+      <li><strong>Creative Professionals & Mac Owners:</strong> iOS may be better (especially if you have a MacBook, iPad, Watch).</li>
+      <li><strong>Rooting/Customization Lovers:</strong> <b>Android is the clear winner!</b></li>
+      <li><strong>App Developers:</strong> Android gives more freedom but Apple is essential for iOS apps.</li>
+    </ul>
+    <p><b>Verdict:</b> <span style="color:green; font-weight:700;">Android wins for 2025, thanks to its unmatched versatility, features, rooting, and device choice!</span></p>
+  </div>
+
+  <div class="section-header">🔓 About Rooting (Android)</div>
+  <div class="rooting-info">
+    <b>Rooting</b> lets you unlock powerful features, remove bloatware, install custom ROMs, improve battery and performance, and try advanced apps or tweaks. Rooting is legal on Android, but be careful—
+    <ul>
+      <li>Can void warranty</li>
+      <li>May reduce security if misused</li>
+      <li>Always back up data before you start!</li>
+      <li>Popular custom ROMs: LineageOS, Pixel Experience, crDroid etc.</li>
+      <li>Check device forums for guides!</li>
+    </ul>
+    <p><b>Apple (iOS)</b> jailbreaking is rare, risky, and usually discouraged. Most users are better off with stock iOS.</p>
+  </div>
+
+  <div class="section-header">🌟 Origins and Discovery</div>
+  <div class="platform-origin">
+    <ul>
+      <li><b>Android:</b> Founded by Andy Rubin in October 2003, acquired by Google in 2005. First commercial device: HTC Dream (T-Mobile G1, 2008). Android rapidly became the world’s most used OS by offering open-source code to manufacturers everywhere.<br><em>Notable: Linux-based, fully open, supports thousands of brands and millions of devices worldwide.</em></li>
+      <li><b>Apple iOS:</b> Developed by Apple Inc., first released in 2007 for the iPhone. Built on Darwin (BSD) core, with a unique interface and strong security. iOS powers iPhones, iPads, and iPod Touch and quickly set the standard for mobile touch computing.<br><em>Notable: Closed-source, highly curated, legendary for stability and updates.</em></li>
+    </ul>
+    <p>
+      <b>Fun fact:</b> Android mascot is “Bugdroid”, while Apple uses the iconic ‘bitten apple’ in branding.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Aaditechiest. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dark/light mode toggle logic
+    const toggleBtn = document.querySelector('.mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+    });
+  </script>
+</body>
+</html>

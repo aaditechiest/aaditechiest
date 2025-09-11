@@ -250,3 +250,53 @@ body.dark-mode footer {
   gap: 2em;
   padding: 1em 0;
 }
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+table {
+  border-collapse: collapse;
+  background: #fff8f1;
+  font-size: 1em;
+  min-width: 720px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+th, td {
+  padding: 18px 16px;
+  text-align: center;
+  border-bottom: 1px solid #fbdbbe;
+}
+th {
+  background: #ffe6c7;
+  color: #d35400;
+  font-weight: 700;
+}
+td a {
+  color: #27ae60;
+  font-weight: bold;
+  text-decoration: none;
+}
+td a:hover {
+  color: #e67e22;
+}
+/* Dark mode for table */
+body.dark-mode table {
+  background: #22223A;
+}
+body.dark-mode th {
+  background: #282851;
+  color: #ffb347;
+}
+body.dark-mode td {
+  color: #F5F7FA;
+  border-bottom: 1px solid #383863;
+}
+body.dark-mode td a {
+  color: #33dd99;
+}
+body.dark-mode td a:hover {
+  color: #ff6363;
+}

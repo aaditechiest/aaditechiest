@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <title>Tech News – aaditechies</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo"><a href="index.html">Aaditechiest</a></div>
+    <div class="logo"><a href="/index.html">Aaditechiest</a></div>
     <ul class="nav-links">
       <li><a href="updates.html">Updates</a></li>
-      <li><a href="index.html#new">New</a></li>
+      <li><a href="news.html">New</a></li>
       <li><a href="allpages.html">All Pages</a></li>
     </ul>
     <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
@@ -35,7 +35,6 @@
     <p>&copy; 2025 Aaditechiest. All rights reserved.</p>
   </footer>
 
-  <script src="news.js"></script>
   <script>
     // Dark/light mode toggle
     const toggleBtn = document.querySelector('.mode-toggle');
@@ -44,5 +43,22 @@
       toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
     });
   </script>
+  <!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHPC0BSQ1T"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+
+
+gtag('config', 'G-LHPC0BSQ1T');
+
+</script>
 </body>
 </html>

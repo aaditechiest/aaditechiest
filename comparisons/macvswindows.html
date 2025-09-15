@@ -4,31 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows vs. macOS: The Definitive Comparison</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f7f6; }
-        .container { max-width: 1100px; margin: 2em auto; padding: 2.5em; background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 15px; }
-        header { text-align: center; margin-bottom: 3em; }
-        header h1 { color: #0078d4; font-size: 3em; margin-bottom: 0.1em; }
-        header p { color: #666; font-size: 1.2em; }
-        hr { border: 0; height: 1px; background: #ddd; margin: 2em 0; }
-        h2 { color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 0.5em; margin-top: 2.5em; font-size: 1.8em; }
-        h3 { color: #444; margin-top: 1.5em; font-size: 1.4em; }
-        .flex-container { display: flex; flex-direction: column; gap: 2em; }
-        @media (min-width: 768px) { .flex-container { flex-direction: row; } .flex-container > div { flex: 1; } }
-        .comparison-table-wrapper { overflow-x: auto; }
-        .comparison-table { width: 100%; border-collapse: collapse; margin-top: 2em; font-size: 0.95em; }
-        .comparison-table th, .comparison-table td { border: 1px solid #e0e0e0; padding: 15px; text-align: left; vertical-align: top; }
-        .comparison-table th { background-color: #f0f2f5; font-weight: bold; color: #555; }
-        .comparison-table tr:nth-child(even) { background-color: #f9f9f9; }
-        .comparison-table td:first-child { font-weight: bold; }
-        footer { text-align: center; padding-top: 2.5em; border-top: 1px solid #ccc; margin-top: 3em; color: #888; }
-        .icon { font-size: 1.2em; vertical-align: middle; margin-right: 5px; }
-        strong { font-weight: bold; }
-    </style>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f4f7f6; transition: background-color 0.3s, color 0.3s; }
+    .container { max-width: 1000px; margin: 2em auto; padding: 1.5em; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 12px; transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; }
+    header { text-align: center; margin-bottom: 2em; }
+    header h1 { color: #007bff; font-size: 2.5em; margin-bottom: 0.2em; transition: color 0.3s; }
+    header p { color: #666; font-size: 1.1em; transition: color 0.3s; }
+    section { margin-bottom: 2.5em; }
+    h2 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 0.3em; margin-top: 1.5em; transition: color 0.3s, border-color 0.3s; }
+    .comparison-table-wrapper { overflow-x: auto; }
+    .comparison-table { width: 100%; border-collapse: collapse; margin-top: 1.5em; font-size: 0.95em; }
+    .comparison-table th, .comparison-table td { border: 1px solid #ddd; padding: 12px; text-align: left; transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+    .comparison-table th { background-color: #f2f2f2; font-weight: bold; color: #333; }
+    .comparison-table tr:nth-child(even) { background-color: #f9f9f9; }
+    .comparison-table td:first-child { font-weight: bold; }
+    footer { text-align: center; padding-top: 1.5em; border-top: 1px solid #ccc; margin-top: 2em; color: #888; transition: color 0.3s, border-color 0.3s; }
+    .logo-image { max-width: 150px; height: auto; display: block; margin: 0 auto 1em; }
+    .flex-container { display: flex; flex-direction: column; gap: 2em; }
+    @media (min-width: 768px) {
+      .flex-container { flex-direction: row; }
+      .flex-container > div { flex: 1; }
+    }
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background: #282c34;
+      color: #abb2bf;
+    }
+
+    body.dark-mode .container {
+      background: #3a3f4b;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      color: #abb2bf;
+    }
+
+    body.dark-mode header h1 {
+      color: #61afef;
+    }
+
+    body.dark-mode header p {
+      color: #8a96a7;
+    }
+
+    body.dark-mode h2 {
+      color: #c678dd;
+      border-color: #c678dd;
+    }
+
+    body.dark-mode .comparison-table th {
+      background-color: #4a505c;
+      color: #e0e0e0;
+      border-color: #555;
+    }
+
+    body.dark-mode .comparison-table td {
+      border-color: #555;
+    }
+
+    body.dark-mode .comparison-table tr {
+      background-color: #3a3f4b;
+    }
+
+    body.dark-mode .comparison-table tr:nth-child(even) {
+      background-color: #30343a;
+    }
+
+    body.dark-mode footer {
+      color: #8a96a7;
+      border-color: #555;
+    }
+
+    .navbar {
+      background-color: #fff;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .navbar .logo a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .navbar .nav-links a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar .mode-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #333;
+    }
+
+    body.dark-mode .navbar {
+      background-color: #30343a;
+      color: #abb2bf;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    body.dark-mode .navbar .logo a {
+      color: #61afef;
+    }
+
+    body.dark-mode .navbar .nav-links a {
+      color: #abb2bf;
+    }
+
+    body.dark-mode .navbar .mode-toggle {
+      color: #abb2bf;
+    }
+  </style>
 </head>
 <body>
+        <nav class="navbar">
+    <div class="logo"><a href="../index.html">Aaditechiest</a></div>
+    <ul class="nav-links">
+      <li><a href="/news/updates.html">Updates</a></li>
+      <li><a href="/news/news.html">New</a></li>
+      <li><a href="../allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
 
 <div class="container">
+    
     <header>
         <h1>Windows vs. macOS: The Ultimate Showdown 💻</h1>
         <p>A detailed look at history, economics, and future of the two most dominant operating systems.</p>
@@ -153,6 +273,31 @@
     </footer>
 
 </div>
+<script>
+  // Dark/light mode toggle
+  const toggleBtn = document.querySelector('.mode-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+  });
+</script>
+<!-- Google tag (gtag.js) -->
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHPC0BSQ1T"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+
+
+gtag('config', 'G-LHPC0BSQ1T');
+
+</script>
 </body>
 </html>
+

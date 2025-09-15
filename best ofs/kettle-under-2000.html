@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best All-in-One Electric Kettles Under ₹2000 - KettleGuru</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <style>
+    :root {
+      --light-bg: #f4f7f9;
+      --light-card: #ffffff;
+      --light-text: #2c3e50;
+      --light-border: #e0e6e9;
+      --light-nav: #ffffff;
+      --light-primary: #007bff;
+      --light-table-header: #f2f8fc;
+      --light-table-category: #e9ecef;
+    }
+    .dark-mode {
+      --dark-bg: #1a1e27;
+      --dark-card: #21273a;
+      --dark-text: #d4e4f1;
+      --dark-border: #343d58;
+      --dark-nav: #2d3550;
+      --dark-primary: #85b8ff;
+      --dark-table-header: #2d3550;
+      --dark-table-category: #181a20;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: var(--light-bg);
+      color: var(--light-text);
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background: var(--light-nav);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: background 0.3s;
+    }
+    .navbar.dark-mode {
+      background: var(--dark-nav);
+    }
+    .logo a {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--light-text);
+      transition: color 0.3s;
+    }
+    .navbar.dark-mode .logo a {
+      color: var(--dark-text);
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li {
+      margin-left: 1.5em;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--light-text);
+      transition: color 0.3s;
+    }
+    .navbar.dark-mode .nav-links a {
+      color: var(--dark-text);
+    }
+    .mode-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: var(--light-text);
+      transition: color 0.3s;
+    }
+    body.dark-mode .mode-toggle {
+      color: var(--dark-text);
+    }
+    .kettle-comp-section {
+      padding: 2em 0.5em;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .comparison-title {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+    .big-comparison-table-wrapper {
+      overflow-x: auto;
+    }
+    .big-comparison-table {
+      min-width: 900px;
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--light-card);
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      font-size: 0.98em;
+      margin: auto;
+      transition: background 0.3s;
+    }
+    body.dark-mode .big-comparison-table {
+      background: var(--dark-card);
+    }
+    .big-comparison-table th, .big-comparison-table td {
+      border: 1px solid var(--light-border);
+      padding: 0.75em 0.6em;
+      vertical-align: middle;
+      text-align: center;
+      transition: border-color 0.3s;
+    }
+    body.dark-mode .big-comparison-table th, body.dark-mode .big-comparison-table td {
+      border-color: var(--dark-border);
+    }
+    .big-comparison-table th {
+      background: var(--light-table-header);
+      color: #003566;
+      font-weight: 700;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark-mode .big-comparison-table th {
+      background: var(--dark-table-header);
+      color: var(--dark-primary);
+    }
+    .big-comparison-table tr.category-row td {
+      background: var(--light-table-category);
+      color: #222;
+      font-weight: bold;
+      text-align: left;
+      font-size: 1.04em;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark-mode .big-comparison-table tr.category-row td {
+      background: var(--dark-table-category);
+      color: #f3e887;
+    }
+    .big-comparison-table img {
+      width: 80px; 
+      height: 80px; 
+      object-fit: contain; 
+      border-radius: 8px;
+      background: #f8f9fa;
+      transition: background 0.3s;
+    }
+    body.dark-mode .big-comparison-table img {
+      background: #333a4d;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5em;
+      font-size: 0.9em;
+      color: #7f8c8d;
+      transition: color 0.3s;
+    }
+    body.dark-mode footer {
+      color: #95a5a6;
+    }
+    @media (max-width: 700px) {
+      .navbar { 
+        padding: 1em; 
+      }
+      .nav-links { 
+        display: none; 
+      }
+      .big-comparison-table-wrapper { 
+        padding: 0 0.1em; 
+      }
+      .big-comparison-table th, 
+      .big-comparison-table td { 
+        font-size: 0.89em; 
+        padding: 0.3em 0.2em; 
+      }
+      .big-comparison-table img { 
+        width: 44px; 
+        height: 44px; 
+      }
+      .kettle-comp-section { 
+        padding: 0.8em 0.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="/index.html">Aaditechiest</a></div>
+    <ul class="nav-links">
+      <li><a href="/news/updates.html">Updates</a></li>
+      <li><a href="/news/news.html">New</a></li>
+      <li><a href="/allpages.html">All Pages</a></li>
+    </ul>
+    <button class="mode-toggle" aria-label="Toggle dark/light mode">&#9728;</button>
+  </nav>
+
+  <section class="kettle-comp-section">
+    <div class="comparison-title">
+      <h1>Best All-in-One Electric Kettles Under ₹2000</h1>
+      <p>Boil, cook, and brew with these versatile multi-functional kettles.</p>
+    </div>
+    <div class="big-comparison-table-wrapper">
+      <table class="big-comparison-table">
+        <tr>
+          <th>Feature</th>
+          <th>
+            <img src="https://m.media-amazon.com/images/I/719hS+2yqSL._SL1500_.jpg" alt="Kettle 1"><br>
+            AGARO <b>Marvel</b>
+          </th>
+          <th>
+            <img src="https://m.media-amazon.com/images/I/71u-2kL861L._SL1500_.jpg" alt="Kettle 2"><br>
+            Kitchoff <b>Automatic</b>
+          </th>
+          <th>
+            <img src="https://m.media-amazon.com/images/I/61k3L4618VL._SL1500_.jpg" alt="Kettle 3"><br>
+            Bms Lifestyle <b>Multi-Purpose</b>
+          </th>
+          <th>
+            <img src="https://m.media-amazon.com/images/I/61+9fK7e5AL._SL1500_.jpg" alt="Kettle 4"><br>
+            Pigeon <b>Glory</b>
+          </th>
+        </tr>
+        <tr class="category-row"><td colspan="5">📝 Basic Information</td></tr>
+        <tr><td>Price (Approx.)</td><td>₹1,499</td><td>₹1,299</td><td>₹1,699</td><td>₹1,549</td></tr>
+        <tr><td>Amazon Rating</td><td>4.2 / 5</td><td>4.0 / 5</td><td>4.1 / 5</td><td>4.3 / 5</td></tr>
+        <tr class="category-row"><td colspan="5">⚙️ Key Features</td></tr>
+        <tr><td>Capacity</td><td>1.2 Litres</td><td>1.8 Litres</td><td>1.5 Litres</td><td>1.7 Litres</td></tr>
+        <tr><td>Wattage</td><td>1000W</td><td>1500W</td><td>1200W</td><td>1500W</td></tr>
+        <tr><td>Material</td><td>Glass & Plastic</td><td>Stainless Steel</td><td>Stainless Steel & Glass</td><td>Stainless Steel</td></tr>
+        <tr><td>Functions</td><td>Boil, Egg Boiler, Tea Maker</td><td>Boil, Steam, Boil Eggs</td><td>Boil, Steam, Keep Warm</td><td>Boil, Cook Noodles, Steam</td></tr>
+        <tr class="category-row"><td colspan="5">🍳 Functionality</td></tr>
+        <tr><td>Egg Boiler Tray</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Noodle Cooker</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Keep Warm Function</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Steamer</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr class="category-row"><td colspan="5">🛡️ Safety & Design</td></tr>
+        <tr><td>Automatic Shut-off</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Boil-Dry Protection</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Cool-Touch Handle</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>360° Swivel Base</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Heating Element</td><td>Concealed</td><td>Concealed</td><td>Concealed</td><td>Concealed</td></tr>
+        <tr><td>Lid Type</td><td>Detachable</td><td>Attached</td><td>Detachable</td><td>Attached</td></tr>
+      </table>
+    </div>
+    <br>
+    <p style="text-align:center; font-size:0.96em; color:#666;">
+      <b>Tip:</b> Scroll left/right to compare on mobile.
+    </p>
+  </section>
+
+  <section style="padding: 2em; text-align: center;">
+    <h2>How to Pick the Best Kettle for You</h2>
+    <p>Consider your primary needs. If you need a larger capacity, the <b>Kitchoff</b> or <b>Pigeon</b> models are great. For specific functions like an egg boiler, almost all models offer it. Pay attention to the material; stainless steel is durable, while glass allows you to see the contents. For specific brand preference, AGARO and Pigeon are well-known brands.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KettleGuru. All rights reserved. Prices are approximate and subject to change on Amazon.</p>
+  </footer>
+  <script>
+    const toggleBtn = document.querySelector('.mode-toggle');
+    const body = document.body;
+    const navbar = document.querySelector('.navbar');
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      navbar.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = body.classList.contains('dark-mode') ? '&#9788;' : '&#9728;';
+    });
+  </script>
+  <!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHPC0BSQ1T"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+
+
+gtag('config', 'G-LHPC0BSQ1T');
+
+</script>
+</body>
+</html>

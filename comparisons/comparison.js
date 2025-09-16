@@ -36,3 +36,4 @@ function renderComparisonList() {
 }
 
 document.addEventListener('DOMContentLoaded', () => renderComparisonList());
+
